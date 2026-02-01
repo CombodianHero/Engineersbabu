@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Engineers Babu Player</title>
+<link rel="stylesheet" href="css/player.css" />
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+
+<body>
+<div id="player-container">
+
+  <div class="logo">𝕰𝖓𝖌𝖎𝖓𝖊𝖊𝖗𝖘 𝕭𝖆𝖇𝖚✍</div>
+
+  <video id="video" playsinline></video>
+  <iframe id="yt-player" allowfullscreen></iframe>
+
+  <div id="lock">🔒</div>
+  <div id="screenshot">📸</div>
+
+  <div class="controls">
+    <input type="range" id="seek" />
+    <div class="control-row">
+      <button id="play">⏯</button>
+      <span id="time">00:00 / 00:00</span>
+      <button id="settings">⚙</button>
+      <button id="fullscreen">⛶</button>
+    </div>
+
+    <div id="settings-menu">
+      <label>Speed</label>
+      <select id="speed">
+        <option>0.5</option>
+        <option>1</option>
+        <option>1.25</option>
+        <option>1.5</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+
+      <label>Quality</label>
+      <select id="quality">
+        <option value="auto">Auto</option>
+        <option value="360">360p</option>
+        <option value="480">480p</option>
+        <option value="720">720p</option>
+        <option value="1080">1080p</option>
+      </select>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/player.js"></script>
+</body>
+</html>
